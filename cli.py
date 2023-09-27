@@ -7,7 +7,7 @@ from cv_data import cv_data
 @click.argument('section', type=click.Choice(['personal', 'experience', 'education']))
 def display_cv_data(section):
     """
-    Command to print CV data in JSON format.
+    Command to print CV data in the command line.
     """
     if section in cv_data:
         data = cv_data[section]
