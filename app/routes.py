@@ -4,17 +4,6 @@ from app import app
 from cv_data import cv_data
 
 
-@app.route('/')
-def hello_world():
-    """
-    Render the homepage.
-
-    Returns:
-        str: A simple welcome message.
-    """
-    return 'Alex Dragan CV!'
-
-
 @app.route('/personal', methods=['GET'])
 def get_personal_info():
     """
