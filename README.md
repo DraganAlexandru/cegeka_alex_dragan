@@ -94,19 +94,19 @@ Replace [section] with one of the following options: personal, experience, or ed
 For example, to display personal information:
 
   ```bash
-  python cli.py display_cv_data personal
+  python cli.py personal
   ```
 
 To display experience information:
 
   ```bash
-  python cli.py display_cv_data experience
+  python cli.py experience
   ```
 
 And to display education information:
 
   ```bash
-  python cli.py display_cv_data education
+  python cli.py education
   ```
 
 ## Running tests
