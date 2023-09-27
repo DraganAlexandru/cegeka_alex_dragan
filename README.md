@@ -61,14 +61,32 @@ Running the Flask App
   ```bash
   python run.py
   ```
-3. Open a web browser and go to http://localhost:5000/ to access the application.
+3. Open a web browser and go through the following links to access the application.
+
+Personal
+
+  ```bash
+     http://localhost:5000/personal
+  ```
+
+Experience
+
+  ```bash
+   http://localhost:5000/experience
+  ```
+
+Education
+  
+  ```bash
+  http://localhost:5000/education
+  ```
 
 Using the CLI
 
 To display CV data using the CLI, you can run the following command in the terminal:
   
   ```bash
-  python cli.py display_cv_data [section]
+  python cli.py [section]
   ```
 
 Replace [section] with one of the following options: personal, experience, or education.
@@ -77,6 +95,18 @@ For example, to display personal information:
 
   ```bash
   python cli.py display_cv_data personal
+  ```
+
+To display experience information:
+
+  ```bash
+  python cli.py display_cv_data experience
+  ```
+
+And to display education information:
+
+  ```bash
+  python cli.py display_cv_data education
   ```
 
 ## Running tests
