@@ -82,29 +82,13 @@ For example, to display personal information:
 ## Running tests
 
 Running the Flask tests
-
-1. Navigate to the tests directory
-   
-  ```bash
-  cd tests
-  ```
-
-2. Run
   
   ```bash
-  pytest test_app.py
+  python -m pytest tests/test_app.py
   ```
 
 Running the CLI tests
-
-1. Navigate to the tests directory
-   
-  ```bash
-  cd tests
-  ```
-
-2. Run
   
   ```bash
-  python -m unittest test_cli.py
+  python -m unittest tests.test_cli
   ```
