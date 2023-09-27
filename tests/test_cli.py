@@ -1,17 +1,12 @@
-import os
 import unittest
 
 from click.testing import CliRunner
 from cli import display_cv_data
 
-TESTDATA_FILENAME = os.path.join(os.path.dirname(__file__), 'cv_data.json')
-
 
 class TestCLI(unittest.TestCase):
     def setUp(self):
         self.runner = CliRunner()
-        self.testfile = open(TESTDATA_FILENAME)
-        self.testdata = self.testfile.read()
 
     def test_personal_info(self):
         result = self.runner.invoke(display_cv_data, ['personal'])
@@ -38,9 +33,6 @@ class TestCLI(unittest.TestCase):
         result = self.runner.invoke(display_cv_data, ['invalid_section'])
         self.assertNotEqual(result.exit_code, 0)
         self.assertIn("'invalid_section' is not one of 'personal', 'experience', 'education'", result.output)
-
-    def tearDown(self):
-        self.testfile.close()
 
 
 if __name__ == '__main__':

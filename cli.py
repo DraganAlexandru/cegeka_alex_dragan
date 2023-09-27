@@ -1,7 +1,6 @@
 import click
-from data_loader import load_cv_data
 
-cv_data = load_cv_data('cv_data.json')
+from cv_data import cv_data
 
 
 @click.command()

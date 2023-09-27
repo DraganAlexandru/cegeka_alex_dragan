@@ -1,4 +1,4 @@
-{
+cv_data = {
     "personal": {
         "name": "Alex Dragan",
         "email": "alex@alexdragan.com",
