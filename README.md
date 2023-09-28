@@ -15,7 +15,7 @@ Flask application that queries data from CV.
 1. Clone the repository to your local machine:
 
   ```bash
-  git clone https://github.com/DraganAlexandru/cegeka_alex_dragan/tree/master
+  git clone https://github.com/DraganAlexandru/cegeka_alex_dragan.git
   ```
 
 2. Navigate to the project directory
